@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sv01
+  namespace: test01
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+     name:  hellonginx
+  template:
+    metadata:
+      labels:
+        name: hellonginx
+    spec:
+      containers:
+      - name: hellonginx
+        image: nginxdemos/hello
