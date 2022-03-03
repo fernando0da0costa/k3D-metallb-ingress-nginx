@@ -45,7 +45,7 @@ echo $range
 echo "$first_addr hello.local" >> /etc/hosts
 echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 kubectl get all --all-namespaces
-cd /ex01
+cd ex01
 chmod +x start.sh
 ./start.sh
 
